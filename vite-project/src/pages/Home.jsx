@@ -2,6 +2,7 @@ import { Navbar } from "../components/NavBar"
 import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from '@/components/StarBackground'
 import { HeroSection } from '../components/HeroSection'
+import { AboutSection } from "../components/AboutSection"
 
 // Home Page Component - Main landing page with cosmic theme
 export const Home = () => {
@@ -21,7 +22,10 @@ export const Home = () => {
             {/* Main content area */}
             <main>
                 <HeroSection/>
+                <AboutSection/>
             </main>
+
+           
 
             {/* Footer section - to be implemented */}
             {/* Footer */}
