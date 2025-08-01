@@ -11,8 +11,8 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">ADICIONAR DEPOIS</h3>
-                        <p className="text-muted-foreground">ADICIONAR DEPOIS</p>
-                        <p className="text-muted-foreground">ADICIONAR DEPOIS</p>
+                        <p className="text-foreground/60">ADICIONAR DEPOIS</p>
+                        <p className="text-foreground/60">ADICIONAR DEPOIS</p>
 
                         <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
                             <a href="#contact" className="cosmic-button text-sm px-4 py-2">
@@ -34,7 +34,7 @@ export const AboutSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">Web Development</h4>
-                                    <p className="text-muted-foreground">Building modern web applications</p>
+                                    <p className="text-foreground/60">Building modern web applications</p>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ export const AboutSection = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">Mobile Development</h4>
-                                    <p className="text-muted-foreground">Creating responsive mobile apps</p>
+                                    <p className="text-foreground/60">Creating responsive mobile apps</p>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@ export const AboutSection = () => {
                                 <div>
                                     
                                     <h4 className="font-semibold mb-2 text-foreground">UI/UX Design</h4>
-                                    <p className="text-muted-foreground">Designing user-friendly interfaces</p>
+                                    <p className="text-foreground/60">Designing user-friendly interfaces</p>
                                 </div>
                             </div>
                         </div>

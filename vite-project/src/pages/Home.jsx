@@ -3,6 +3,7 @@ import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from '@/components/StarBackground'
 import { HeroSection } from '../components/HeroSection'
 import { AboutSection } from "../components/AboutSection"
+import { SkillsSection } from "../components/SkillsSection"
 
 // Home Page Component - Main landing page with cosmic theme
 export const Home = () => {
@@ -20,9 +21,10 @@ export const Home = () => {
             <StarBackground/>
 
             {/* Main content area */}
-            <main>
+            <main className="relative z-10">
                 <HeroSection/>
                 <AboutSection/>
+                <SkillsSection/>
             </main>
 
            
