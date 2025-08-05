@@ -9,7 +9,7 @@
 
 **Portfolio pessoal com design cósmico e responsivo**
 
-[🌐 **Live Demo**](https://your-vercel-url.vercel.app) • [📧 **Contact**](mailto:gtrosati@gmail.com)
+[🌐 **Live Demo**](https://gabriel-rosati.vercel.app/) • [📧 **Contact**](gt.rosati@gmail.com)
 
 </div>
 
