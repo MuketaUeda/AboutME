@@ -1,39 +1,44 @@
-// Import icons from lucide-react for visual elements
+// Importa ícones do lucide-react para elementos visuais
 import { Code, User, Briefcase } from "lucide-react";
 
-// AboutSection Component - Displays personal information and professional overview
-// This component creates a two-column layout with personal description and skill cards
+// Seção "Sobre Mim" - informações pessoais e profissionais
 export const AboutSection = () => {
     return (
-        // Main section container with responsive padding and positioning
+        // Container principal da seção
         <section id="about" className="py-24 px-4 relative">
-            {/* Container with max width for better content alignment */}
+            {/* Container com largura máxima para melhor alinhamento */}
             <div className="container mx-auto max-w-5xl">
-                {/* Section title with responsive text sizing and primary color accent */}
+                {/* Título da seção com cor primária */}
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary">Me</span>
                 </h2>
                 
-                {/* Two-column grid layout: personal info on left, skill cards on right */}
+                {/* Layout em grid: informações pessoais + cards de habilidades */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     
-                    {/* Left column: Personal description and call-to-action buttons */}
+                    {/* Coluna esquerda: Descrição pessoal e botões de ação */}
                     <div className="space-y-6">
-                        {/* Placeholder for personal title/headline */}
-                        <h3 className="text-2xl font-semibold">ADICIONAR DEPOIS</h3>
+                        {/* Título profissional */}
+                        <h3 className="text-2xl font-semibold">Software Engineer & Full-Stack Developer</h3>
                         
-                        {/* Placeholder paragraphs for personal description */}
-                        <p className="text-foreground/60">ADICIONAR DEPOIS</p>
-                        <p className="text-foreground/60">ADICIONAR DEPOIS</p>
+                        {/* Parágrafos de descrição pessoal */}
+                        <p className="text-foreground/60">
+                            I'm a passionate software engineer with expertise in modern web technologies. 
+                            I love creating user-friendly applications that solve real-world problems.
+                        </p>
+                        <p className="text-foreground/60">
+                            With experience in both frontend and backend development, I bring ideas to life 
+                            through clean, efficient code and intuitive user interfaces.
+                        </p>
 
-                        {/* Action buttons container with responsive flex layout */}
+                        {/* Container de botões de ação */}
                         <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
-                            {/* Primary call-to-action button with cosmic styling */}
+                            {/* Botão principal de contato */}
                             <a href="#contact" className="cosmic-button text-sm px-4 py-2">
                                 Get In Touch
                             </a>
                             
-                            {/* Secondary buttons for CV downloads with hover effects */}
+                            {/* Botões secundários para download de CV */}
                             <a href="#contact" className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300">
                                 CV - PTBR
                             </a>
@@ -43,17 +48,17 @@ export const AboutSection = () => {
                         </div>
                     </div>
                     
-                    {/* Right column: Professional skill cards */}
+                    {/* Coluna direita: Cards de habilidades profissionais */}
                     <div className="grid grid-cols-1 gap-6">
                         
-                        {/* Web Development skill card */}
+                        {/* Card: Desenvolvimento Web */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
-                                {/* Icon container with primary color background */}
+                                {/* Container do ícone */}
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Code className="h-6 w-6 text-primary"/>
                                 </div>
-                                {/* Skill description */}
+                                {/* Descrição da habilidade */}
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">Web Development</h4>
                                     <p className="text-foreground/60">Building modern web applications</p>
@@ -61,14 +66,14 @@ export const AboutSection = () => {
                             </div>
                         </div>
                         
-                        {/* Mobile Development skill card */}
+                        {/* Card: Desenvolvimento Mobile */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
-                                {/* Icon container with primary color background */}
+                                {/* Container do ícone */}
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <User className="h-6 w-6 text-primary"/>
                                 </div>
-                                {/* Skill description */}
+                                {/* Descrição da habilidade */}
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">Mobile Development</h4>
                                     <p className="text-foreground/60">Creating responsive mobile apps</p>
@@ -76,14 +81,14 @@ export const AboutSection = () => {
                             </div>
                         </div>
                         
-                        {/* UI/UX Design skill card */}
+                        {/* Card: Design UI/UX */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
-                                {/* Icon container with primary color background */}
+                                {/* Container do ícone */}
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Briefcase className="h-6 w-6 text-primary"/>
                                 </div>
-                                {/* Skill description */}
+                                {/* Descrição da habilidade */}
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">UI/UX Design</h4>
                                     <p className="text-foreground/60">Designing user-friendly interfaces</p>

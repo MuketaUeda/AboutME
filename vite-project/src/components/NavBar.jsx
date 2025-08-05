@@ -2,7 +2,7 @@ import {cn} from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { X, Menu } from "lucide-react";
 
-// Navigation items for the navbar
+// Itens de navegação para a navbar
 const navItems = [
     {name: "Home", href: "#hero"},
     {name: "About", href: "#about"},
@@ -11,12 +11,13 @@ const navItems = [
     {name: "Contact", href: "#contact"},
 ];
 
-// Navbar Component - Fixed navigation with scroll effect
+// Componente de navegação - fixo no topo com efeito de scroll
 export const Navbar = () => {
+    // Estados para controlar scroll e menu mobile
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Handle scroll effect for navbar styling
+    // Efeito de scroll para estilização da navbar
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 10);
@@ -30,21 +31,24 @@ export const Navbar = () => {
             isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
         )}>
             <div className="container flex items-center justify-between">
+                {/* Logo/Nome */}
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero">
-                    <span className="relative z-10">
+                    <span className="relative">
                         <span className="text-glow text-foreground">Gabriel Rosati</span>
                         <span className="ml-2">Portfolio</span>
                     </span>
                 </a>
 
-                {/*Desktop Navigation*/}
+                {/* Navegação Desktop */}
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
-                        <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">{item.name}</a>
+                        <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                            {item.name}
+                        </a>
                     ))}
                 </div>
 
-                {/*Mobile Menu Button*/}
+                {/* Botão do menu mobile */}
                 <button 
                     onClick={() => {
                         console.log('Menu clicked, current state:', isMenuOpen);
@@ -55,8 +59,8 @@ export const Navbar = () => {
                     {isMenuOpen ? <X size={24} className="text-foreground" /> : <Menu size={24} className="text-foreground" />}
                 </button>
 
-                {/*Mobile Menu Overlay*/}
-                <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+                {/* Overlay do menu mobile */}
+                <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-30 flex flex-col items-center justify-center",
                     "transition-all duration-300 md:hidden",
                     isMenuOpen ? "opacity-100 pointer-events-auto" 
                     : "opacity-0 pointer-events-none"

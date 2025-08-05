@@ -2,12 +2,12 @@ import { Sun, Moon } from "lucide-react";
 import { useEffect, useState } from "react";
 import {cn} from "@/lib/utils";
 
-// Theme Toggle Component - Switches between light and dark themes with localStorage persistence
+// Componente de alternância de tema - alterna entre temas claro e escuro
 export const ThemeToggle = () => {
-    // State to track current theme mode
+    // Estado para rastrear o modo atual do tema
     const [isDarkMode, setIsDarkMode] = useState(false);
 
-    // Initialize theme from localStorage on component mount
+    // Inicializa o tema do localStorage quando o componente monta
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme")
         if (storedTheme == "dark"){
@@ -19,15 +19,15 @@ export const ThemeToggle = () => {
         }
     }, [])
 
-    // Toggle between light and dark themes
+    // Alterna entre temas claro e escuro
     const toogleTheme = () => {
         if (isDarkMode) {
-            // Switch to light mode
+            // Muda para modo claro
             setIsDarkMode(false);
             document.documentElement.classList.remove("dark");
             localStorage.setItem("theme", "light")
         } else{
-            // Switch to dark mode
+            // Muda para modo escuro
             document.documentElement.classList.add("dark");
             localStorage.setItem("theme", "dark")
             setIsDarkMode(true);
@@ -35,11 +35,11 @@ export const ThemeToggle = () => {
     }
 
     return (
-        // Fixed positioned button in top-right corner with responsive visibility
-        <button onClick={toogleTheme} className={cn("fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300", 
-            "focus:outline-hidden"
+        // Botão fixo no canto superior direito com visibilidade responsiva
+        <button onClick={toogleTheme} className={cn("fixed max-sm:hidden top-5 right-5 z-40 p-2 rounded-full transition-colors duration-300", 
+            "focus:outline-none"
         )}>
-            {/* Show sun icon in dark mode, moon icon in light mode */}
+            {/* Mostra ícone do sol no modo escuro, lua no modo claro */}
             {isDarkMode ? <Sun className="h-6 w-6 text-yellow-300" /> : <Moon className="h-6 w-6 text-blue-900" /> }
         </button>
     );

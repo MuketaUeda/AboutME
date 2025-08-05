@@ -5,34 +5,35 @@ import { HeroSection } from '../components/HeroSection'
 import { AboutSection } from "../components/AboutSection"
 import { SkillsSection } from "../components/SkillsSection"
 import { ProjectsSection } from "../components/ProjectsSection"
+import { ContactSection } from "../components/ContactSection"
+import { Footer } from "../components/Footer"
 
-// Home Page Component - Main landing page with cosmic theme
+// Página principal - landing page com tema cósmico
 export const Home = () => {
     return (
-        // Main container with full viewport height and responsive design
+        // Container principal com altura total da viewport e design responsivo
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
 
-            {/* Navigation bar - should be on top */}
+            {/* Barra de navegação - deve ficar no topo */}
             <Navbar/>
 
-            {/* Theme toggle button - switches between light/dark modes */}
+            {/* Botão de alternância de tema - alterna entre modos claro/escuro */}
             <ThemeToggle/>
 
-            {/* Animated cosmic background with stars and meteors */}
+            {/* Fundo cósmico animado com estrelas e meteoros */}
             <StarBackground/>
 
-            {/* Main content area */}
+            {/* Área de conteúdo principal */}
             <main className="relative z-10">
                 <HeroSection/>
                 <AboutSection/>
                 <SkillsSection/>
                 <ProjectsSection/>
+                <ContactSection/>
             </main>
 
-           
-
-            {/* Footer section - to be implemented */}
-            {/* Footer */}
+            {/* Seção de rodapé - a ser implementada */}
+            <Footer/>
 
         </div>
     )
