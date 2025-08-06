@@ -8,7 +8,7 @@ const projects = [
         id: 1,
         name: "IA + JADE",
         description: "Projeto de IA com agente Jade desenvolvido na Universidade de Granada (ES), nele o Raccon deve encontrar a lata de lixo utilizando o menor caminho possível",
-        image: "/projects/Raccon.png",
+        image: "/projects/Raccon.PNG",
         tags: ["Java", "Jade", "JSwing"],
         link: "#",
         github: "https://github.com/MuketaUeda/DBA-2"
