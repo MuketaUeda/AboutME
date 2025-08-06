@@ -28,6 +28,8 @@ Portfolio profissional desenvolvido com **React + Vite** e **Tailwind CSS**, apr
 - 📧 **Formulário de Contato Funcional** - Integração com Formspree
 - 📄 **Download de CVs** - Arquivos PDF em português e inglês
 - 🔗 **Links Sociais** - LinkedIn e GitHub integrados
+- 🎨 **Animações Suaves** - Transições e efeitos visuais modernos
+- 📊 **Seção de Projetos** - Exibição de projetos com imagens e links
 
 ---
 
@@ -60,7 +62,7 @@ Portfolio profissional desenvolvido com **React + Vite** e **Tailwind CSS**, apr
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/AboutME.git
+git clone https://github.com/MuketaUeda/AboutME.git
 cd AboutME/vite-project
 ```
 
@@ -98,29 +100,35 @@ vite-project/
 ├── public/
 │   ├── CV-Gabriel-Rosati-PTBR.pdf
 │   ├── CV-Gabriel-Rosati-EN.pdf
-│   └── projects/
+│   ├── projects/                    # 📁 Pasta para imagens dos projetos
+│   │   ├── ia-jade.png             # Imagem do projeto IA + JADE
+│   │   ├── shop-pet.png            # Imagem do projeto Shop do Pet
+│   │   └── nabocoin.png            # Imagem do projeto NaboCoin
+│   └── vite.svg
 ├── src/
 │   ├── components/
-│   │   ├── AboutSection.jsx      # Seção "Sobre Mim"
-│   │   ├── ContactSection.jsx    # Formulário de contato
-│   │   ├── HeroSection.jsx       # Seção principal
-│   │   ├── NavBar.jsx           # Navegação
-│   │   ├── ProjectsSection.jsx   # Projetos em destaque
-│   │   ├── SkillsSection.jsx     # Habilidades técnicas
-│   │   ├── StarBackground.jsx    # Fundo animado
-│   │   └── ThemeToggle.jsx       # Alternador de tema
+│   │   ├── AboutSection.jsx        # Seção "Sobre Mim"
+│   │   ├── ContactSection.jsx      # Formulário de contato
+│   │   ├── Footer.jsx              # Rodapé
+│   │   ├── HeroSection.jsx         # Seção principal
+│   │   ├── NavBar.jsx              # Navegação
+│   │   ├── ProjectsSection.jsx     # Projetos em destaque
+│   │   ├── SkillsSection.jsx       # Habilidades técnicas
+│   │   ├── StarBackground.jsx      # Fundo animado
+│   │   └── ThemeToggle.jsx         # Alternador de tema
 │   ├── pages/
-│   │   ├── Home.jsx             # Página principal
-│   │   └── NotFound.jsx         # Página 404
+│   │   ├── Home.jsx                # Página principal
+│   │   └── NotFound.jsx            # Página 404
 │   ├── lib/
-│   │   └── utils.js             # Utilitários
-│   ├── assets/                  # Recursos estáticos
-│   ├── App.jsx                  # Componente raiz
-│   ├── main.jsx                 # Entry point
-│   └── index.css                # Estilos globais
+│   │   └── utils.js                # Utilitários
+│   ├── assets/                     # Recursos estáticos
+│   ├── App.jsx                     # Componente raiz
+│   ├── main.jsx                    # Entry point
+│   └── index.css                   # Estilos globais
 ├── package.json
 ├── vite.config.js
-└── vercel.json                  # Configuração Vercel
+├── vercel.json                     # Configuração Vercel
+└── eslint.config.js                # Configuração ESLint
 ```
 
 ---
@@ -145,7 +153,8 @@ vite-project/
 ### **ProjectsSection**
 - Exibição de projetos em destaque
 - Links para GitHub e demo
-- Cards responsivos
+- Cards responsivos com imagens
+- Tags de tecnologias utilizadas
 
 ### **ContactSection**
 - Formulário funcional com Formspree
@@ -156,6 +165,36 @@ vite-project/
 - Fundo cósmico animado
 - Estrelas e meteoros dinâmicos
 - Performance otimizada
+
+### **NavBar & Footer**
+- Navegação responsiva
+- Alternador de tema
+- Links sociais no rodapé
+
+---
+
+## 📸 **Configuração de Imagens dos Projetos**
+
+### **Adicionando Imagens**
+1. Coloque suas imagens na pasta `public/projects/`
+2. Atualize os caminhos no arquivo `src/components/ProjectsSection.jsx`
+
+### **Exemplo de Uso**
+```jsx
+// Em ProjectsSection.jsx
+const projects = [
+    {
+        name: "IA + JADE",
+        image: "/projects/ia-jade.png",  // Imagem em public/projects/
+        // ... outras propriedades
+    }
+]
+```
+
+### **Formatos Suportados**
+- PNG, JPG, JPEG, WebP
+- Tamanho recomendado: 800x600px
+- Otimize as imagens para web
 
 ---
 
@@ -200,7 +239,7 @@ Edite `src/index.css` para personalizar:
 ### **Conteúdo**
 Atualize os componentes para incluir:
 - Suas informações pessoais
-- Projetos reais
+- Projetos reais com imagens
 - Habilidades específicas
 - Links de redes sociais
 
@@ -208,6 +247,11 @@ Atualize os componentes para incluir:
 Substitua os arquivos PDF em `public/`:
 - `CV-Gabriel-Rosati-PTBR.pdf`
 - `CV-Gabriel-Rosati-EN.pdf`
+
+### **Projetos**
+1. Adicione imagens em `public/projects/`
+2. Atualize os dados em `ProjectsSection.jsx`
+3. Inclua links reais para GitHub e demos
 
 ---
 
@@ -250,6 +294,27 @@ O projeto é totalmente responsivo com breakpoints:
 - Imagens otimizadas
 - CSS purged automaticamente
 - Bundle splitting
+
+---
+
+## 🎨 **Design System**
+
+### **Cores**
+- **Primary:** Azul cósmico (#3B82F6)
+- **Secondary:** Roxo espacial (#8B5CF6)
+- **Background:** Gradientes escuros
+- **Text:** Branco e cinza claro
+
+### **Tipografia**
+- **Headings:** Inter, sans-serif
+- **Body:** Inter, sans-serif
+- **Weights:** 400, 500, 600, 700
+
+### **Animações**
+- Transições suaves (300ms)
+- Hover effects
+- Scroll animations
+- Star background animations
 
 ---
 

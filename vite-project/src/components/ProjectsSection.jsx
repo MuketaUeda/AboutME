@@ -8,28 +8,28 @@ const projects = [
         id: 1,
         name: "IA + JADE",
         description: "Projeto de IA com agente Jade desenvolvido na Universidade de Granada (ES), nele o Raccon deve encontrar a lata de lixo utilizando o menor caminho possível",
-        image: "/projects/#",
-        tags: ["React", "Tailwind", "TypeScript"],
+        image: "/projects/Raccon.png",
+        tags: ["Java", "Jade", "JSwing"],
         link: "#",
         github: "https://github.com/MuketaUeda/DBA-2"
     },
     {
         id: 2,
-        name: "Project 2",
-        description: "Description 2",
+        name: "Shop do Pet",
+        description: "Projeto fullstack de um petshop, com possibilidade de cadastro de administradores e clientes, produtos, carrinho e gestão de estoque",
         image: "/projects/#",
-        tags: ["React", "Tailwind", "TypeScript"],
+        tags: ["React", "Express", "JavaScript", "Node.js", "MongoDB"],
         link: "#",
-        github: "#"
+        github: "https://github.com/MuketaUeda/projetoWebDev"
     },
     {
         id: 3,
-        name: "Project 3",
-        description: "Description 3",
+        name: "NaboCoin",
+        description: "Projeto de uma criptomoeda desenvolvida em Python utilizando Kafka e nuvem para alocar o projeto, nele as 'moedas' podem ser utilizadas para enviar mensagens",
         image: "/projects/#",
-        tags: ["React", "Tailwind", "TypeScript"],
+        tags: ["Python", "ApacheKafka", "Flask"],
         link: "#",
-        github: "#"
+        github: "https://github.com/MuketaUeda/NaboCoin"
     },
 ]
 
