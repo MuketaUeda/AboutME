@@ -7,8 +7,8 @@ const projects = [
     {
         id: 1,
         name: "IA + JADE",
-        description: "Projeto de IA com agente Jade desenvolvido na Universidade de Granada (ES), nele o Raccon deve encontrar a lata de lixo utilizando o menor caminho possível",
-        image: "/projects/Raccon.PNG",
+        description: "AI project with a Jade agent developed at the University of Granada (ES), in which the Raccoon must find the trash can using the shortest possible path.",
+        image: "/projects/Raccon.png",
         tags: ["Java", "Jade", "JSwing"],
         link: "#",
         github: "https://github.com/MuketaUeda/DBA-2"
@@ -16,8 +16,8 @@ const projects = [
     {
         id: 2,
         name: "Shop do Pet",
-        description: "Projeto fullstack de um petshop, com possibilidade de cadastro de administradores e clientes, produtos, carrinho e gestão de estoque",
-        image: "/projects/#",
+        description: "Full-stack pet shop project with support for administrator and customer registration, product management, shopping cart, and inventory control.",
+        image: "/projects/shop-pet.png",
         tags: ["React", "Express", "JavaScript", "Node.js", "MongoDB"],
         link: "#",
         github: "https://github.com/MuketaUeda/projetoWebDev"
@@ -25,8 +25,8 @@ const projects = [
     {
         id: 3,
         name: "NaboCoin",
-        description: "Projeto de uma criptomoeda desenvolvida em Python utilizando Kafka e nuvem para alocar o projeto, nele as 'moedas' podem ser utilizadas para enviar mensagens",
-        image: "/projects/#",
+        description: "Cryptocurrency project developed in Python using Kafka and cloud deployment, in which the “coins” can be used to send messages.",
+        image: "/projects/nabocoin.png",
         tags: ["Python", "ApacheKafka", "Flask"],
         link: "#",
         github: "https://github.com/MuketaUeda/NaboCoin"
