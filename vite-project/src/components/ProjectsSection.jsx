@@ -6,12 +6,12 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react"
 const projects = [
     {
         id: 1,
-        name: "Project 1",
-        description: "Description 1",
+        name: "IA + JADE",
+        description: "Projeto de IA com agente Jade desenvolvido na Universidade de Granada (ES), nele o Raccon deve encontrar a lata de lixo utilizando o menor caminho possível",
         image: "/projects/#",
         tags: ["React", "Tailwind", "TypeScript"],
         link: "#",
-        github: "#"
+        github: "https://github.com/MuketaUeda/DBA-2"
     },
     {
         id: 2,
