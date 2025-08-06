@@ -8,7 +8,7 @@ const projects = [
         id: 1,
         name: "IA + JADE",
         description: "AI project with a Jade agent developed at the University of Granada (ES), in which the Raccoon must find the trash can using the shortest possible path.",
-        image: "/projects/Raccon.png",
+        image: "/projects/Raccon.PNG",
         tags: ["Java", "Jade", "JSwing"],
         link: "#",
         github: "https://github.com/MuketaUeda/DBA-2"
