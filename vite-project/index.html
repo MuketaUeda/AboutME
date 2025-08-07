@@ -9,6 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page title displayed in browser tab -->
     <title>Vite + React</title>
+    <!-- Script para aplicar tema escuro imediatamente e evitar flash -->
+    <script>
+      // Aplica tema escuro por padrão imediatamente
+      const theme = localStorage.getItem('theme') || 'dark';
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
   <body>
     <!-- Root element where React application will be mounted -->

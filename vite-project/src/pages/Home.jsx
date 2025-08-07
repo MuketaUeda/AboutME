@@ -1,5 +1,4 @@
 import { Navbar } from "../components/NavBar"
-import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from '@/components/StarBackground'
 import { HeroSection } from '../components/HeroSection'
 import { AboutSection } from "../components/AboutSection"
@@ -16,9 +15,6 @@ export const Home = () => {
 
             {/* Barra de navegação - deve ficar no topo */}
             <Navbar/>
-
-            {/* Botão de alternância de tema - alterna entre modos claro/escuro */}
-            <ThemeToggle/>
 
             {/* Fundo cósmico animado com estrelas e meteoros */}
             <StarBackground/>
