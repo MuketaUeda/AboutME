@@ -31,6 +31,15 @@ const projects = [
         link: "#",
         github: "https://github.com/MuketaUeda/NaboCoin"
     },
+    {
+        id: 4,
+        name: "Deck of Cards Classification with PyTorch",
+        description: "Deep Learning card classifier using PyTorch, capable of accurately identifying 53 classes — all standard playing cards plus the joker.",
+        image: "/projects/deck.PNG",
+        tags: ["Python", "PyTorch", "Jupyter Notebook"],
+        link: "https://www.kaggle.com/code/gabrielrosati/pytorch-agent",
+        github: "https://github.com/MuketaUeda/IAModelPyTorch"
+    },
 ]
 
 // Seção de projetos em destaque
