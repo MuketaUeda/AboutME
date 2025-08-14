@@ -31,6 +31,7 @@ const skills = [
     {name: "Linux", Level: "70", Category: "Tools"},
     {name: "Figma", Level: "90", Category: "Tools"},
     {name: "Jupyter Notebook", Level: "70", Category: "Tools"},
+    {name: "Design Patterns", Level: "80", Category: "Tools"},
 ];
 
 // Categorias disponíveis para filtro

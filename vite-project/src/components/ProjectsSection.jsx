@@ -33,7 +33,7 @@ const projects = [
     },
     {
         id: 4,
-        name: "Deck of Cards Classification with PyTorch",
+        name: "Deck of Cards Classifier with PyTorch",
         description: "Deep Learning card classifier using PyTorch, capable of accurately identifying 53 classes — all standard playing cards plus the joker.",
         image: "/projects/deck.PNG",
         tags: ["Python", "PyTorch", "Jupyter Notebook"],
