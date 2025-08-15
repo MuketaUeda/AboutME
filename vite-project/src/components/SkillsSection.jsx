@@ -17,6 +17,7 @@ const skills = [
     {name: "Python", Level: "80", Category: "Backend"},
     {name: "C++", Level: "80", Category: "Backend"},
     {name: "Java", Level: "75", Category: "Backend"},
+    {name: "SpringBoot", Level: "50", Category: "Backend"},
     {name: "AWS", Level: "50", Category: "Backend"},
     {name: "PyTorch", Level: "40", Category: "Backend"},
     {name: "Kafka", Level: "40", Category: "Backend"},

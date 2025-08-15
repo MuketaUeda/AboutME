@@ -40,6 +40,15 @@ const projects = [
         link: "https://www.kaggle.com/code/gabrielrosati/pytorch-agent",
         github: "https://github.com/MuketaUeda/IAModelPyTorch"
     },
+    {
+        id: 5,
+        name: "AddonIA",
+        description: "An addon for Google Chrome using Gemini API, JavaSpringBoot and React to summarize, analizy and translate text.",
+        image: "/projects/addon.PNG",
+        tags: ["Java", "SpringBoot", "React", "Gemini API"],
+        link: "#",
+        github: "https://github.com/MuketaUeda/IA-Addon"
+    }
 ]
 
 // Seção de projetos em destaque
