@@ -40,8 +40,8 @@ export const AboutSection = () => {
                             
                             {/* Botões secundários para download de CV */}
                             <a 
-                                href="/CV Gabriel-Rosati-PTBR.pdf" 
-                                download="CV Gabriel-Rosati-PTBR.pdf"
+                                href="/CV Gabriel Rosati Short.pdf" 
+                                download="CV Gabriel Rosati Short.pdf"
                                 className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +50,8 @@ export const AboutSection = () => {
                                 CV - PTBR
                             </a>
                             <a 
-                                href="/CV-Gabriel-Rosati-EN.pdf" 
-                                download="CV-Gabriel-Rosati-EN.pdf"
+                                href="/CV Gabriel Rosati Short en-US.pdf" 
+                                download="CV Gabriel Rosati Short en-US.pdf"
                                 className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
