@@ -48,6 +48,15 @@ const projects = [
         tags: ["Java", "SpringBoot", "React", "Gemini API"],
         link: "#",
         github: "https://github.com/MuketaUeda/IA-Addon"
+    },
+    {
+        id: 6,
+        name: "MotorcycleRental.NET",
+        description: "A motorcycle rental system built with ASP.NET Core, PostgreSQL, RabbitMQ and Docker.",
+        image: "/projects/MotoRental.PNG",
+        tags: ["C#", "ASP.NET Core", "PostgreSQL", "RabbitMQ", "Docker, CI/CD"],
+        link: "#",
+        github: "https://github.com/MuketaUeda/MotorcycleRent.NET"
     }
 ]
 

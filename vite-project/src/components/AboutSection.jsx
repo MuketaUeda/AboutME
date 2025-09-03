@@ -32,16 +32,16 @@ export const AboutSection = () => {
                         </p>
 
                         {/* Container de botões de ação */}
-                        <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
+                        <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center text-center">
                             {/* Botão principal de contato */}
-                            <a href="#contact" className="cosmic-button text-sm px-4 py-2">
+                            <a href="#contact" className="cosmic-button text-sm px-4 py-2 flex items-center justify-center">
                                 Get In Touch
                             </a>
                             
                             {/* Botões secundários para download de CV */}
                             <a 
-                                href="/CV Gabriel Rosati Short.pdf" 
-                                download="CV Gabriel Rosati Short.pdf"
+                                href="/CV Gabriel Rosati.pdf" 
+                                download="CV Gabriel Rosati.pdf"
                                 className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

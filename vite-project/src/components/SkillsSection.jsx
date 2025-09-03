@@ -18,9 +18,13 @@ const skills = [
     {name: "C++", Level: "80", Category: "Backend"},
     {name: "Java", Level: "75", Category: "Backend"},
     {name: "SpringBoot", Level: "50", Category: "Backend"},
+    {name: "ASP.NET Core", Level: "60", Category: "Backend"},
     {name: "AWS", Level: "50", Category: "Backend"},
     {name: "PyTorch", Level: "40", Category: "Backend"},
     {name: "Kafka", Level: "40", Category: "Backend"},
+    {name: "C#", Level: "70", Category: "Backend"},
+    {name: "RabbitMQ", Level: "60", Category: "Backend"},
+
     
     // Database
     {name: "SQL", Level: "70", Category: "Database"},
@@ -33,6 +37,8 @@ const skills = [
     {name: "Figma", Level: "90", Category: "Tools"},
     {name: "Jupyter Notebook", Level: "70", Category: "Tools"},
     {name: "Design Patterns", Level: "80", Category: "Tools"},
+    {name: "Docker", Level: "70", Category: "Tools"},
+    {name: "CI/CD", Level: "50", Category: "Tools"},
 ];
 
 // Categorias disponíveis para filtro
