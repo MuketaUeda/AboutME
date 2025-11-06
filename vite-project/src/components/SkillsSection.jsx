@@ -10,39 +10,40 @@ const skills = [
     {name: "React", Level: "70", Category: "Frontend"},
     {name: "Next.js", Level: "60", Category: "Frontend"},
     {name: "Tailwind CSS", Level: "65", Category: "Frontend"},
-    {name: "Bootstrap", Level: "50", Category: "Frontend"},
     
     // Backend
     {name: "Node.js", Level: "60", Category: "Backend"},
     {name: "Python", Level: "80", Category: "Backend"},
-    {name: "C++", Level: "80", Category: "Backend"},
-    {name: "Java", Level: "75", Category: "Backend"},
-    {name: "SpringBoot", Level: "50", Category: "Backend"},
     {name: "ASP.NET Core", Level: "60", Category: "Backend"},
     {name: "AWS", Level: "50", Category: "Backend"},
-    {name: "PyTorch", Level: "40", Category: "Backend"},
-    {name: "Kafka", Level: "40", Category: "Backend"},
-    {name: "C#", Level: "70", Category: "Backend"},
     {name: "RabbitMQ", Level: "60", Category: "Backend"},
-
     
     // Database
     {name: "SQL", Level: "70", Category: "Database"},
     {name: "MongoDB", Level: "70", Category: "Database"},
     {name: "PostgreSQL", Level: "70", Category: "Database"},
+    {name: "AstraDB", Level: "50", Category: "Database"},
     
     // Tools
     {name: "Git", Level: "80", Category: "Tools"},
     {name: "Linux", Level: "70", Category: "Tools"},
     {name: "Figma", Level: "90", Category: "Tools"},
-    {name: "Jupyter Notebook", Level: "70", Category: "Tools"},
-    {name: "Design Patterns", Level: "80", Category: "Tools"},
     {name: "Docker", Level: "70", Category: "Tools"},
     {name: "CI/CD", Level: "50", Category: "Tools"},
+    {name: "Vercel", Level: "60", Category: "Tools"},
+
+
+    // IA
+    {name: "PyTorch", Level: "40", Category: "artificial-intelligence"},
+    {name: "Gemini API", Level: "50", Category: "artificial-intelligence"},
+    {name: "LangChain", Level: "40", Category: "artificial-intelligence"},
+    {name: "Pinecone", Level: "40", Category: "artificial-intelligence"},
+    {name: "CrewIA", Level: "40", Category: "artificial-intelligence"},
+    {name: "Scikit-learn", Level: "40", Category: "artificial-intelligence"}
 ];
 
 // Categorias disponíveis para filtro
-const categories = ["all", "frontend", "backend", "database", "tools"];
+const categories = ["all", "frontend", "backend", "database", "artificial-intelligence","tools" ];
 
 // Seção de habilidades - mostra skills com filtros por categoria
 export const SkillsSection = () => {

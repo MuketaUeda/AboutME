@@ -19,7 +19,8 @@ export const HeroSection = () => {
                     
                     {/* Subtítulo com descrição profissional */}
                     <p className="text-lg md:text-xl text-foreground/80 mt-8 opacity-0 animate-fade-in-delay-6">
-                        Software Engineer - Code-driven & User-focused
+                        Code-driven & User-focused <br />
+                        IA-Powered
                     </p>
                     
                     {/* Botão de call-to-action */}

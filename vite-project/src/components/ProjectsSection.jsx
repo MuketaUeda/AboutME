@@ -24,15 +24,6 @@ const projects = [
     },
     {
         id: 3,
-        name: "NaboCoin",
-        description: "Cryptocurrency project developed in Python using Kafka and cloud deployment, in which the “coins” can be used to send messages.",
-        image: "/projects/nabocoin.png",
-        tags: ["Python", "ApacheKafka", "Flask"],
-        link: "#",
-        github: "https://github.com/MuketaUeda/NaboCoin"
-    },
-    {
-        id: 4,
         name: "Deck of Cards Classifier with PyTorch",
         description: "Deep Learning card classifier using PyTorch, capable of accurately identifying 53 classes — all standard playing cards plus the joker.",
         image: "/projects/deck.PNG",
@@ -41,7 +32,7 @@ const projects = [
         github: "https://github.com/MuketaUeda/IAModelPyTorch"
     },
     {
-        id: 5,
+        id: 4,
         name: "AddonIA",
         description: "An addon for Google Chrome using Gemini API, JavaSpringBoot and React to summarize, analizy and translate text.",
         image: "/projects/addon.PNG",
@@ -50,13 +41,22 @@ const projects = [
         github: "https://github.com/MuketaUeda/IA-Addon"
     },
     {
-        id: 6,
+        id: 5,
         name: "MotorcycleRental.NET",
         description: "A motorcycle rental system built with ASP.NET Core, PostgreSQL, RabbitMQ and Docker.",
         image: "/projects/MotoRental.PNG",
         tags: ["C#", "ASP.NET Core", "PostgreSQL", "RabbitMQ", "Docker, CI/CD"],
         link: "#",
         github: "https://github.com/MuketaUeda/MotorcycleRent.NET"
+    },
+    {
+        id: 6,
+        name: "O Ursão",
+        description: "A chatbot RAG built with Next.js, LangChain and AstraDB, created to answer questions about the Oktoberlim, and help the team to get insights for the future events.",
+        image: "/projects/oursao.PNG",
+        tags: ["Next.js", "LangChain", "Gemini API", "AstraDB", "Vercel"],
+        link: "#",
+        github: "https://github.com/MuketaUeda/TheBigBear"
     }
 ]
 

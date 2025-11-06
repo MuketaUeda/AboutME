@@ -1,5 +1,5 @@
 // Importa ícones do lucide-react para elementos visuais
-import { Code, User, Briefcase } from "lucide-react";
+import { Monitor, Brain, Bot } from "lucide-react";
 
 // Seção "Sobre Mim" - informações pessoais e profissionais
 export const AboutSection = () => {
@@ -23,12 +23,12 @@ export const AboutSection = () => {
                         
                         {/* Parágrafos de descrição pessoal */}
                         <p className="text-foreground/60">
-                            I'm a passionate software engineer with expertise in modern web technologies. 
-                            I love creating user-friendly applications that solve real-world problems.
+                        I'm a passionate software engineer focused on building intelligent products powered by AI.
+                        I enjoy combining software engineering and artificial intelligence to create solutions that are smart, intuitive, and impactful.
                         </p>
                         <p className="text-foreground/60">
-                            With experience in both frontend and backend development, I bring ideas to life 
-                            through clean, efficient code and intuitive user interfaces.
+                        With experience across frontend, backend, and applied machine learning, 
+                        I bring ideas to life through clean, efficient code and data-driven design.
                         </p>
 
                         {/* Container de botões de ação */}
@@ -40,8 +40,8 @@ export const AboutSection = () => {
                             
                             {/* Botões secundários para download de CV */}
                             <a 
-                                href="/CV Gabriel Rosati.pdf" 
-                                download="CV Gabriel Rosati.pdf"
+                                href="/cv/CV_Gabriel_Rosati_IA.pdf" 
+                                download="CV_Gabriel_Rosati_IA.pdf"
                                 className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +50,8 @@ export const AboutSection = () => {
                                 CV - PTBR
                             </a>
                             <a 
-                                href="/CV Gabriel Rosati Short en-US.pdf" 
-                                download="CV Gabriel Rosati Short en-US.pdf"
+                                href="/cv/CV_Gabriel_Rosati_IA_EN.pdf" 
+                                download="CV_Gabriel_Rosati_IA_EN.pdf"
                                 className="px-6 py-2 rounded-full border border-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
                             >
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,42 +70,42 @@ export const AboutSection = () => {
                             <div className="flex items-start gap-4">
                                 {/* Container do ícone */}
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary"/>
+                                    <Monitor className="h-6 w-6 text-primary"/>
                                 </div>
                                 {/* Descrição da habilidade */}
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">Web Development</h4>
-                                    <p className="text-foreground/60">Building modern web applications</p>
+                                    <p className="text-foreground/60">Building full-stack modern web applications</p>
                                 </div>
                             </div>
                         </div>
                         
-                        {/* Card: Desenvolvimento Mobile */}
+                        {/* Card: IA Agents */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 {/* Container do ícone */}
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary"/>
+                                    <Brain className="h-6 w-6 text-primary"/>
                                 </div>
                                 {/* Descrição da habilidade */}
                                 <div>
-                                    <h4 className="font-semibold mb-2 text-foreground">Mobile Development</h4>
-                                    <p className="text-foreground/60">Creating responsive mobile apps</p>
+                                    <h4 className="font-semibold mb-2 text-foreground">IA Agents</h4>
+                                    <p className="text-foreground/60">Creating intelligent agents that can perform tasks autonomously</p>
                                 </div>
                             </div>
                         </div>
                         
-                        {/* Card: Design UI/UX */}
+                        {/* Card: IA Chatbot (RAG) */}
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-start gap-4">
                                 {/* Container do ícone */}
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary"/>
+                                    <Bot className="h-6 w-6 text-primary"/>
                                 </div>
                                 {/* Descrição da habilidade */}
                                 <div>
-                                    <h4 className="font-semibold mb-2 text-foreground">UI/UX Design</h4>
-                                    <p className="text-foreground/60">Designing user-friendly interfaces</p>
+                                    <h4 className="font-semibold mb-2 text-foreground">IA Chatbot (RAG)</h4>
+                                    <p className="text-foreground/60">Creating chatbots that can answer questions based on proprietary data</p>
                                 </div>
                             </div>
                         </div>
