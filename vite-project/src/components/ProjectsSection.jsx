@@ -66,7 +66,7 @@ export const ProjectsSection = () => {
         <section id="projects" className="py-24 px-4 relative">
             <div className="container mx-auto max-w-5xl">
                 {/* Título da seção */}
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
+                <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
                     Featured <span className="text-primary">Projects</span>
                 </h2>
 
@@ -93,7 +93,7 @@ export const ProjectsSection = () => {
                                 {/* Tags do projeto */}
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, index) => (
-                                        <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/10 text-secondary">
+                                        <span key={index} className="px-2 py-1 text-xs font-mono border rounded-full bg-primary/10 text-secondary-foreground border-primary/20">
                                             {tag}
                                         </span>
                                     ))}

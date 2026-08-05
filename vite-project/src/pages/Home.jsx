@@ -1,5 +1,4 @@
 import { Navbar } from "../components/NavBar"
-import { StarBackground } from '@/components/StarBackground'
 import { HeroSection } from '../components/HeroSection'
 import { AboutSection } from "../components/AboutSection"
 import { SkillsSection } from "../components/SkillsSection"
@@ -15,9 +14,6 @@ export const Home = () => {
 
             {/* Barra de navegação - deve ficar no topo */}
             <Navbar/>
-
-            {/* Fundo cósmico animado com estrelas e meteoros */}
-            <StarBackground/>
 
             {/* Área de conteúdo principal */}
             <main className="relative z-10">

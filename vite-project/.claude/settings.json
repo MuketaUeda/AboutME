@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "INPUT=$(cat); SESSION_ID=$(echo \"$INPUT\" | jq -r '.session_id // \"unknown\"'); REPO=\"/Users/gabriel/Desktop/Projetos Pessoais/AboutME/vite-project\"; SENTINEL=\"/tmp/claude-md-reminder-$SESSION_ID\"; [ -f \"$SENTINEL\" ] && exit 0; cd \"$REPO\" 2>/dev/null || exit 0; CHANGES=$(git status --porcelain -- . \":!CLAUDE.md\" 2>/dev/null); if [ -n \"$CHANGES\" ]; then touch \"$SENTINEL\"; printf '%s' '{\"decision\":\"block\",\"reason\":\"Esta sessao alterou arquivos do projeto vite-project. Antes de finalizar, revise o CLAUDE.md e atualize-o se as mudancas afetarem comandos, arquitetura ou convencoes documentadas.\"}'; fi",
+            "timeout": 15,
+            "statusMessage": "Verificando se o CLAUDE.md precisa de atualização..."
+          }
+        ]
+      }
+    ]
+  }
+}

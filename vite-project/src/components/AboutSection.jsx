@@ -9,7 +9,7 @@ export const AboutSection = () => {
             {/* Container com largura máxima para melhor alinhamento */}
             <div className="container mx-auto max-w-5xl">
                 {/* Título da seção com cor primária */}
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+                <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary">Me</span>
                 </h2>
                 
