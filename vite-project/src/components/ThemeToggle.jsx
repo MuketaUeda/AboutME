@@ -41,11 +41,11 @@ export const ThemeToggle = () => {
 
     return (
         // Botão de tema integrado na navbar - sem posicionamento fixo
-        <button onClick={toogleTheme} className={cn("p-2 rounded-lg transition-colors duration-300", 
-            "focus:outline-none bg-primary/10 hover:bg-primary/20 border border-primary/20"
+        <button onClick={toogleTheme} className={cn("p-2 rounded-none transition-colors duration-150",
+            "focus:outline-none border-2 border-border bg-secondary-background hover:bg-chart-1"
         )}>
             {/* Mostra ícone do sol no modo escuro, lua no modo claro */}
-            {isDarkMode ? <Sun className="h-5 w-5 text-yellow-300" /> : <Moon className="h-5 w-5 text-blue-900" /> }
+            {isDarkMode ? <Sun className="h-5 w-5 text-chart-1" /> : <Moon className="h-5 w-5 text-accent" /> }
         </button>
     );
 };

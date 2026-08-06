@@ -1,6 +1,9 @@
 // Seção de projetos - exibe projetos em destaque com descrições e links
 
 import { ExternalLink, Github, ArrowRight } from "lucide-react"
+import { Card } from "./ui/card"
+import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
 
 // Dados dos projetos - substitua pelos seus projetos reais
 const projects = [
@@ -67,67 +70,69 @@ export const ProjectsSection = () => {
             <div className="container mx-auto max-w-5xl">
                 {/* Título da seção */}
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
-                    Featured <span className="text-primary">Projects</span>
+                    Featured <span className="text-main text-stamp">Projects</span>
                 </h2>
 
                 {/* Descrição da seção */}
-                <p className="text-center text-foreground/60 mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                     Here are some of my recent projects that showcase my skills and passion for development.
                 </p>
 
                 {/* Grid de cards de projetos */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (
-                        <div key={project.id} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
+                        <Card key={project.id} className="group py-0 gap-0 overflow-hidden transition-transform duration-150 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-none">
                             {/* Imagem do projeto */}
-                            <div className="h-48 overflow-hidden">
-                                <img 
-                                    src={project.image} 
-                                    alt={project.name} 
+                            <div className="h-48 overflow-hidden border-b-2 border-border">
+                                <img
+                                    src={project.image}
+                                    alt={project.name}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
                             </div>
-                            
+
                             {/* Conteúdo do card */}
                             <div className="p-6">
                                 {/* Tags do projeto */}
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, index) => (
-                                        <span key={index} className="px-2 py-1 text-xs font-mono border rounded-full bg-primary/10 text-secondary-foreground border-primary/20">
+                                        <Badge key={index} variant="neutral">
                                             {tag}
-                                        </span>
+                                        </Badge>
                                     ))}
                                 </div>
-                                
+
                                 {/* Nome do projeto */}
                                 <h3 className="text-xl font-semibold mb-1 text-foreground">{project.name}</h3>
-                                
+
                                 {/* Descrição do projeto */}
-                                <p className="text-sm text-foreground/60 mb-4">{project.description}</p>
-                                
+                                <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
+
                                 {/* Links do projeto */}
                                 <div className="flex justify-between items-center">
                                     <div className="flex space-x-3">
                                         {/* Link para o projeto */}
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-main transition-colors duration-300">
                                             <ExternalLink size={20}/>
                                         </a>
                                         {/* Link para o GitHub */}
-                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-main transition-colors duration-300">
                                             <Github size={20}/>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Card>
                     ))}
                 </div>
-                
+
                 {/* Botão para GitHub */}
                 <div className="text-center mt-12">
-                    <a className="cosmic-button w-fit flex items-center gap-2 mx-auto" target="_blank" rel="noopener noreferrer" href="https://github.com/MuketaUeda">
-                        Check out my GitHub <ArrowRight size={16}/>
-                    </a>
+                    <Button asChild>
+                        <a className="w-fit flex items-center gap-2 mx-auto" target="_blank" rel="noopener noreferrer" href="https://github.com/MuketaUeda">
+                            Check out my GitHub <ArrowRight size={16}/>
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>

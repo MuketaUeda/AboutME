@@ -1,27 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @theme {
   --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
   --color-background: hsl(var(--background));
+  --color-secondary-background: hsl(var(--secondary-background));
+  --color-card: hsl(var(--secondary-background));
   --color-foreground: hsl(var(--foreground));
 
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-main: hsl(var(--main));
+  --color-main-foreground: hsl(var(--main-foreground));
 
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
 
-  --color-secondary: hsl(var(--secondary));
-  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
 
-  --color-graph: hsl(var(--graph));
+  --color-success: hsl(var(--success));
+  --color-success-foreground: hsl(var(--success-foreground));
+  --color-error: hsl(var(--error));
+  --color-error-foreground: hsl(var(--error-foreground));
 
-  --color-card: hsl(var(--card));
+  --color-muted-foreground: hsl(var(--muted-foreground));
 
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-display: 'Archivo Black', ui-sans-serif, system-ui, sans-serif;
+  --font-weight-base: var(--base-font-weight);
+  --font-weight-heading: var(--heading-font-weight);
+
+  --radius-base: var(--border-radius);
+
+  --shadow-shadow: var(--shadow);
+
+  --spacing-boxShadowX: var(--box-shadow-x);
+  --spacing-boxShadowY: var(--box-shadow-y);
+  --spacing-reverseBoxShadowX: var(--reverse-box-shadow-x);
+  --spacing-reverseBoxShadowY: var(--reverse-box-shadow-y);
 
   --animate-fade-in: fade-in 0.7s ease-out forwards;
   --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
@@ -31,7 +50,6 @@
   --animate-fade-in-delay-5: fade-in 0.7s ease-out 1.5s forwards;
   --animate-fade-in-delay-6: fade-in 0.7s ease-out 2.0s forwards;
   --animate-fade-in-delay-7: fade-in 0.7s ease-out 2.3s forwards;
-  --animate-graph-pulse: graph-pulse 4s ease-in-out infinite;
 
   @keyframes fade-in {
     from {
@@ -43,57 +61,63 @@
       transform: translateY(0);
     }
   }
-
-  @keyframes graph-pulse {
-    0%,
-    100% {
-      opacity: 0.15;
-    }
-    50% {
-      opacity: 0.55;
-    }
-  }
 }
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --border-radius: 2px;
+    --box-shadow-x: 4px;
+    --box-shadow-y: 4px;
+    --reverse-box-shadow-x: -4px;
+    --reverse-box-shadow-y: -4px;
 
-    --card: 0 0% 100%;
+    --heading-font-weight: 700;
+    --base-font-weight: 500;
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --background: 48 100% 95%;
+    --secondary-background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+    --border: 0 0% 0%;
+    --ring: 0 0% 0%;
 
-    --accent: 38 92% 50%;
-    --accent-foreground: 222 47% 11%;
+    --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px hsl(var(--border));
 
-    --secondary: 220 20% 94%;
-    --secondary-foreground: 222 47% 11%;
+    --main: 330 100% 58%;
+    --main-foreground: 0 0% 100%;
 
-    --graph: 175 65% 40%;
+    --accent: 221 100% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
+    --chart-1: 51 100% 50%;
+    --chart-2: 84 90% 55%;
+    --chart-3: 28 100% 50%;
+    --chart-4: 174 100% 42%;
+    --chart-5: 4 100% 55%;
+
+    --success: 142 90% 40%;
+    --success-foreground: 0 0% 9%;
+    --error: var(--chart-5);
+    --error-foreground: 0 0% 100%;
+
+    --muted-foreground: 0 0% 35%;
+
+    --category-tools: 28 100% 50%;
+    --category-infra: 174 100% 42%;
   }
 
   .dark {
-    --background: 240 20% 2%;
-    --foreground: 213 31% 91%;
+    --background: 0 0% 6%;
+    --secondary-background: 0 0% 11%;
+    --foreground: 0 0% 96%;
+    --border: 48 45% 93%;
+    --ring: 48 45% 93%;
 
-    --card: 240 15% 6%;
+    --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px hsl(var(--border));
 
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
+    --muted-foreground: 0 0% 68%;
 
-    --accent: 38 92% 60%;
-    --accent-foreground: 222 47% 4%;
-
-    --secondary: 240 15% 10%;
-    --secondary-foreground: 213 31% 91%;
-
-    --graph: 175 65% 50%;
-
-    --border: 240 15% 14%;
+    --category-tools: 28 100% 50%;
+    --category-infra: 174 100% 42%;
   }
 
   * {
@@ -131,39 +155,9 @@
   }
 }
 
-@utility text-glow {
+@utility text-stamp {
   @apply relative;
-  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
-}
-
-@utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
-}
-
-@utility gradient-border {
-  @apply relative rounded-md;
-  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
-  background-clip: padding-box;
-  border: 1px solid transparent;
-}
-
-@utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
-         hover:scale-105 active:scale-95;
-}
-
-@utility graph-edge {
-  stroke: hsl(var(--edge-color, var(--graph)));
-  stroke-width: 1;
-  animation: var(--animate-graph-pulse);
-  transition: opacity 300ms ease, stroke-width 300ms ease;
-}
-
-@utility graph-node-dot {
-  @apply inline-block w-1.5 h-1.5 rounded-full mr-2 align-middle;
-  background: hsl(var(--node-color, var(--graph)));
-  box-shadow: 0 0 6px 1px hsl(var(--node-color, var(--graph)) / 0.6);
+  text-shadow: 3px 3px 0 hsl(var(--border));
 }
 
 #root {

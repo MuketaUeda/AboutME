@@ -38,16 +38,16 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className={cn("fixed top-0 w-full z-40 transition-all duration-300",
-                isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+            <nav className={cn("fixed top-0 w-full z-40 bg-background border-b-2 border-border transition-all duration-150",
+                isScrolled ? "py-3 shadow-shadow" : "py-5"
             )}>
                 <div className="px-4 sm:px-6 lg:px-8 flex items-center justify-between">
                     {/* Logo/Nome */}
-                    <a className="font-display text-xl font-bold text-primary flex items-center" href="#hero">
-                        <span className="relative">
-                            <span className="text-glow text-foreground">Gabriel Rosati</span>
-                            <span className="ml-2">Portfolio</span>
+                    <a className="font-display text-xl font-bold text-foreground flex items-center gap-3" href="#hero">
+                        <span className="flex items-center justify-center w-9 h-9 border-2 border-border shadow-shadow bg-main text-foreground -rotate-3 text-sm">
+                            GR
                         </span>
+                        <span className="text-main text-main">Portifolio</span>
                     </a>
 
                     {/* Área dos botões e navegação - tudo junto à direita */}
@@ -55,7 +55,7 @@ export const Navbar = () => {
                         {/* Navegação Desktop - agora próxima aos botões */}
                         <div className="hidden md:flex space-x-6">
                             {navItems.map((item, key) => (
-                                <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                <a key={key} href={item.href} className="text-foreground hover:text-main transition-colors duration-150">
                                     {item.name}
                                 </a>
                             ))}
@@ -67,7 +67,7 @@ export const Navbar = () => {
                         {/* Botão do menu mobile */}
                         <button
                             onClick={() => setIsMenuOpen((prev) => !prev)}
-                            className="md:hidden p-2 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors duration-300 border border-primary/20 relative z-50"
+                            className="md:hidden p-2 rounded-none bg-secondary-background hover:bg-chart-1 transition-colors duration-150 border-2 border-border relative z-50"
                         >
                             {isMenuOpen ? <X size={24} className="text-foreground" /> : <Menu size={24} className="text-foreground" />}
                         </button>
@@ -75,10 +75,9 @@ export const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Overlay do menu mobile - fora do <nav> para nunca herdar o backdrop-blur
-                condicional dele (que quebraria o containing block deste elemento fixed) */}
-            <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-30 flex flex-col items-center justify-center",
-                "transition-all duration-300 md:hidden",
+            {/* Overlay do menu mobile */}
+            <div className={cn("fixed inset-0 bg-background z-30 flex flex-col items-center justify-center",
+                "transition-all duration-150 md:hidden",
                 isMenuOpen ? "opacity-100 pointer-events-auto"
                 : "opacity-0 pointer-events-none"
             )}>
@@ -87,7 +86,7 @@ export const Navbar = () => {
                         <a
                             key={key}
                             href={item.href}
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            className="text-foreground hover:text-main transition-colors duration-150"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {item.name}
