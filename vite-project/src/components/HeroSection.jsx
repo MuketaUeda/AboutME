@@ -25,12 +25,12 @@ export const HeroSection = () => {
                 <div className="space-y-6">
                     {/* Título principal com animações de fade-in */}
                     <h1 className="font-display text-4xl md:text-6xl font-bold text-foreground">
-                        {/* Linha de apresentação */}
-                        <div className="text-main opacity-0 animate-fade-in">AI Engineer</div>
                         {/* Linha "Hi, I'm" */}
-                        <div className="text-2xl md:text-4xl mt-4 opacity-0 animate-fade-in-delay-4">Hi, I'm</div>
+                        <div className="text-2xl md:text-4xl opacity-0 animate-fade-in">Hi, I'm</div>
                         {/* Nome principal */}
-                        <div className="text-stamp text-main opacity-0 animate-fade-in-delay-5">Gabriel Rosati</div>
+                        <div className="text-stamp text-main opacity-0 animate-fade-in-delay-1">Gabriel Rosati</div>
+                        {/* Linha de apresentação */}
+                        <div className="text-main text-3xl md:text-5xl mt-4 opacity-0 animate-fade-in-delay-4">AI Engineer</div>
                     </h1>
 
                     {/* Subtítulo com descrição profissional */}

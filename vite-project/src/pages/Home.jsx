@@ -10,7 +10,7 @@ import { Footer } from "../components/Footer"
 export const Home = () => {
     return (
         // Container principal com altura total da viewport e design responsivo
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <div className="min-h-screen bg-grid text-foreground overflow-x-hidden">
 
             {/* Barra de navegação - deve ficar no topo */}
             <Navbar/>
