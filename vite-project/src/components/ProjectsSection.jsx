@@ -111,7 +111,7 @@ export const ProjectsSection = () => {
                             <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
 
                             {/* Links do projeto */}
-                            <div className="flex justify-between items-center">
+                            <div className="flex justify-between items-center mt-auto">
                                 <div className="flex space-x-3">
                                     {/* Link para o projeto */}
                                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-main transition-colors duration-300">
