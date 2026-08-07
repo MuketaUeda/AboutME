@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { NotFound } from './pages/NotFound'
-import { HeroSection } from './components/HeroSection'
 
 // Main App Component - Sets up routing for the application
 function App() {

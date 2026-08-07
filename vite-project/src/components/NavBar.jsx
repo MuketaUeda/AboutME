@@ -47,7 +47,7 @@ export const Navbar = () => {
                         <span className="flex items-center justify-center w-9 h-9 border-2 border-border shadow-shadow bg-main text-foreground -rotate-3 text-sm">
                             GR
                         </span>
-                        <span className="text-main text-main">Portifolio</span>
+                        <span className="text-main text-main">Portfolio</span>
                     </a>
 
                     {/* Área dos botões e navegação - tudo junto à direita */}
